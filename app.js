@@ -5,7 +5,7 @@ const bateriaText = document.querySelector('.bateria b')
 const person = document.querySelector('.personagem');
 const img = document.querySelector('.personagem img')
 var porcen
-porcen = 70
+porcen = 20
 
 var terraY = terra.offsetTop + terra.clientHeight
 
