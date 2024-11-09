@@ -1,0 +1,99 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ background-color: gray;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+.bateria {
+ background-image: url(bateria-fraca.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+ position: absolute;
+ top: 50px;
+ right: 50px;
+ width: 120px;
+ height: 60px;
+ padding: 9px 24px 9px 9px;
+}
+
+.bateria b {
+ margin: 0 10px;
+ font-size: 20px;
+}
+
+.porcentagem {
+ /* background-color: rgba(0, 128, 0, 0.877); */
+ display: flex;
+ align-items: center;
+ height: 100%;
+ border-right: solid black 1px;
+}
+
+.tela {
+ background: linear-gradient(180deg, cornflowerblue 40%, rgb(187, 211, 255) 100%);
+ overflow: hidden;
+ display: flex;
+ align-items: end;
+ border: 10px solid black;
+ border-radius: 10px;
+ position: relative;
+ width: 80%;
+ height: 80%;
+}
+
+.personagem {
+ position: absolute;
+ left: 40px;
+ bottom: 50px;
+}
+
+.vibration {
+ animation: 3ms vibration linear infinite;
+}
+
+.personagem img {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100px;
+}
+
+.grass {
+ background: linear-gradient(180deg, gray 40%, rgb(110, 99, 99) 70%);
+ height: 50px;
+ width: 100%;
+}
+
+#energia {
+ position: absolute;
+ top: 0;
+ width: 55px;
+}
+
+@keyframes vibration {
+
+ 0%,
+ 100% {
+  transform: translate(0px, 0px);
+ }
+
+ 25% {
+  transform: translate(2px, 0px);
+ }
+
+ 50% {
+  transform: translate(-2px, -2px);
+ }
+
+ 75% {
+  transform: translate(2px, -2px);
+ }
+}
